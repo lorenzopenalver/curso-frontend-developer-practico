@@ -92,14 +92,13 @@ const isMobileMenuClosed =  mobileMenu.classList.contains('inactive');
 
 
 function openProductDetailAside(){
+
     shoppingCartContainer.classList.add('inactive')
     desktopMenu.classList.add('inactive')
     mobileMenu.classList.add('inactive')
     productDetailContainer.classList.remove('inactive');
 }
 function closeProductDetailAside (){
-
-    
     productDetailContainer.classList.add('inactive');
 
 }
@@ -167,6 +166,8 @@ function renderProducts(arr){
         productImgCart.setAttribute('src', './icons/bt_add_to_cart.svg');
     
         productInfoFigure.appendChild(productImgCart);
+
+        
     
     
         productInfo.appendChild(productInfoDiv);
@@ -178,3 +179,4 @@ function renderProducts(arr){
     }
 }
 renderProducts(productList);
+productDetailCloseIcon.getAttribute()
